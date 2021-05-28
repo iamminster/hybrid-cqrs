@@ -1,0 +1,9 @@
+## Configuration Requirements
+- Java 11^
+- Docker
+
+## Build project
+./gradlew assemble
+
+## Run project
+docker-compose up -d
