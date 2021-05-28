@@ -1,0 +1,6 @@
+include 'common-swagger'
+include 'common-web'
+include 'common-cqrs-model'
+include 'write-service'
+include 'read-service'
+

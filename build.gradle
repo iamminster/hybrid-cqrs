@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion")
+    }
+}
+
+plugins {
+    id 'groovy'
+    id 'java'
+    id 'eclipse'
+    id 'idea'
+}
+
+
+jar {
+    archiveFileName = 'hybrid-cqrs'
+    archiveVersion = '0.1.0'
+}
+
+
+
+subprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.11
+    targetCompatibility = 1.11
+
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+}
